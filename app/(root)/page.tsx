@@ -1,21 +1,17 @@
+import NavBar from "@/components/NavBar";
+import { HeroSection } from "./_components";
+
 export default function Home() {
   return (
-    <main className="max-w-[1920px] mx-auto bg-white">
-      {/* hero section */}
-      <section
-        id="hero"
-        className="bg-hero h-[640px] xl:h-[840px] bg-cover bg-center"
-      >
-        <div className="container mx-auto">
-          <h1 className="h1">Interno Landing Page</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
-            delectus nihil? Beatae dolores, dignissimos suscipit nisi est
-            explicabo quisquam quae labore culpa, itaque repellendus nesciunt
-            nemo. Sunt, aspernatur assumenda. Eaque?
-          </p>
-        </div>
-      </section>
-    </main>
+    <>
+      <NavBar />
+      <main className="max-w-[1920px] mx-auto bg-white overflow-hidden relative">
+        {/* grid img */}
+        <div className="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10" />
+        {/* hero section */}
+        <HeroSection />
+        <div className="h-[3000px]">{/* temporary div for scrolling */}</div>
+      </main>
+    </>
   );
 }
