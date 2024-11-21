@@ -8,9 +8,30 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: {
+        padding: {
+          DEFAULT: "20px",
+        },
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "#292F36",
+          hover: "#343E4A",
+        },
+        secondary: "#4D5053",
+        accent: {
+          DEFAULT: "#CDA274",
+          seconday: "#F4F0EC",
+          hover: "#B88C5D",
+        },
+      },
+      fontFamily: {
+        "dm-serif": ["var(--font-dm-serif)"],
+        jost: ["var(--font-jost)"],
+      },
+      backgroundImage: {
+        hero: 'url("/hero/bg.jpg")',
+        grid: 'url("/grid.png")',
       },
     },
   },
