@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <section
       id="hero"
@@ -14,8 +14,9 @@ const HeroSection = () => {
         >
           <h1 className="h1">Let Your Home Be Unique</h1>
           <p>
-            There are many variations of the passages of lorem Ipsum from
-            available,variations of the passages. Btn text: Get free estimation
+            Transform your living space with personalized designs that reflect
+            your style. We bring creativity and functionality together to make
+            your home truly unique.
           </p>
           <button className="btn btn-primary mx-auto xl:mx-0">
             Get free estimation
@@ -27,4 +28,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;

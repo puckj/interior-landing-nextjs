@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(true);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   return (
     <header className="sticky top-0 h-[90px] shadow-lg z-30 bg-white">
       <div className="container mx-auto h-full flex items-center justify-between">
@@ -16,7 +16,7 @@ const NavBar = () => {
         <nav className="flex">
           <button
             className="cursor-pointer lg:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen((prev) => !prev)}
           >
             {isMenuOpen ? (
               <X width={25} height={25} />

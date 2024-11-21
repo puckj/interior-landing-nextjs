@@ -1,5 +1,5 @@
 import NavBar from "@/components/NavBar";
-import { HeroSection } from "./_components";
+import { Hero, Steps } from "./_components";
 
 export default function Home() {
   return (
@@ -9,7 +9,8 @@ export default function Home() {
         {/* grid img */}
         <div className="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10" />
         {/* hero section */}
-        <HeroSection />
+        <Hero />
+        <Steps />
         <div className="h-[3000px]">{/* temporary div for scrolling */}</div>
       </main>
     </>
