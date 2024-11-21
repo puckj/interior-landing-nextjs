@@ -16,6 +16,9 @@ h6 {
 }
 
 @layer utilities {
+  .link {
+    @apply text-[20px] transition-all duration-300 hover:text-accent;
+  }
   .h1 {
     @apply text-[64px] leading-none lg:text-[84px];
   }

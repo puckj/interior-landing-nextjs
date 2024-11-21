@@ -1,6 +1,7 @@
 import { stepItems } from "@/constants";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Steps = () => {
   return (
@@ -9,16 +10,19 @@ const Steps = () => {
         <div className="grid grid-cols-1 xl:grid-cols-3 xl:gap-12 gap-20">
           {stepItems.map((step, index) => (
             <div
-              className="flex flex-col items-center w-[358px] text-center space-y-[20px] cursor-pointer"
+              className="flex flex-col items-center max-w-[358px] text-center"
               key={index}
             >
               <Image src={step.icon} width={45} height={45} alt={step.title} />
-              <h1 className="text-[23px]">{step.title}</h1>
-              <p>{step.description}</p>
-              <div className="flex flex-row items-center">
-                <p>Read More</p>
+              <h3 className="text-[23px] mb-5 mt-2">{step.title}</h3>
+              <p className="mb-9">{step.description}</p>
+              <Link
+                href="#"
+                className="flex link justify-center items-center gap-2 font-medium"
+              >
+                <p className="text-[18px]">Read More</p>
                 <ArrowRight className="text-accent" />
-              </div>
+              </Link>
             </div>
           ))}
         </div>

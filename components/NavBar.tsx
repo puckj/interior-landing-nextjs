@@ -7,6 +7,7 @@ import { useState } from "react";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const menuToggleHandler = () => setIsMenuOpen((prev) => !prev);
   return (
     <header className="sticky top-0 h-[90px] shadow-lg z-30 bg-white">
       <div className="container mx-auto h-full flex items-center justify-between">
@@ -16,7 +17,7 @@ const NavBar = () => {
         <nav className="flex">
           <button
             className="cursor-pointer lg:hidden"
-            onClick={() => setIsMenuOpen((prev) => !prev)}
+            onClick={menuToggleHandler}
           >
             {isMenuOpen ? (
               <X width={25} height={25} />
@@ -32,10 +33,12 @@ const NavBar = () => {
             {navLinks.map((item, index) => (
               <li
                 key={index}
-                className="text-secondary hover:text-accent-hover transition-colors duration-400
+                className="text-secondary hover:text-accent-hover transition-colors duration-300
                   text-[20px]"
               >
-                <Link href={item.href}>{item.label}</Link>
+                <Link href={item.href} onClick={menuToggleHandler}>
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
