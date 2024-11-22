@@ -75,3 +75,26 @@ export const brandItems = [
     url: "/brands/05.svg",
   },
 ];
+
+export const workItems = [
+  {
+    name: "Modern Kitchen",
+    description: "Decor / Architecture",
+    url: "/work/01.png",
+  },
+  {
+    name: "Cozy Hallway",
+    description: "Interior Design / Organization",
+    url: "/work/02.png",
+  },
+  {
+    name: "Minimalist Workspace",
+    description: "Furniture / Lighting",
+    url: "/work/03.png",
+  },
+  {
+    name: "Relaxing Living Room",
+    description: "Comfort / Aesthetic",
+    url: "/work/04.png",
+  },
+];
