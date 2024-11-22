@@ -18,8 +18,8 @@ const Hero = () => {
             your style. We bring creativity and functionality together to make
             your home truly unique.
           </p>
-          <button className="btn btn-primary mx-auto xl:mx-0">
-            Get free estimation
+          <button className="btn btn-primary font-semibold mx-auto xl:mx-0">
+            Get Started
             <ArrowRight className="text-accent" />
           </button>
         </div>

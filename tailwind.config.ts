@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       container: {
         padding: {
-          DEFAULT: "20px",
+          DEFAULT: "50px",
         },
       },
       colors: {
