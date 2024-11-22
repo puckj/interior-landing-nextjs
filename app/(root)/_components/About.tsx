@@ -11,7 +11,7 @@ const About = () => {
         >
           {/* TEXT */}
           <div className="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[410px]">
-            <h2 className="h2 mb-[33px]">
+            <h2 className="h2 mb-[33px] max-sm:text-[48px]">
               We Create The Art Of Stylish Living Stylishly
             </h2>
             <p className="mb-[45px]">
