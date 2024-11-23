@@ -98,3 +98,43 @@ export const workItems = [
     url: "/work/04.png",
   },
 ];
+
+export const statItems = [
+  {
+    label: "Year Of Experience",
+    stat: 12,
+  },
+  {
+    label: "Success Projects",
+    stat: 85,
+  },
+  {
+    label: "Active Projects",
+    stat: 15,
+  },
+  {
+    label: "Happy Customers",
+    stat: 95,
+  },
+];
+
+export const newsItems = [
+  {
+    title: "Let’s Get Solution For Building Construction Work",
+    category: "Kitchen Design",
+    date: "22 November 2024",
+    img: "/news/01.png",
+  },
+  {
+    title: "Low Cost Latest Invented Interior Designing Ideas",
+    category: "Living Design",
+    date: "18 November 2024",
+    img: "/news/02.png",
+  },
+  {
+    title: "Best For Any Office & Business Interior Solution",
+    category: "Interior Design",
+    date: "11 November 2024",
+    img: "/news/03.png",
+  },
+];

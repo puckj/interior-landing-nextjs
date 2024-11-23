@@ -1,4 +1,4 @@
-import { workItems } from "@/constants";
+import { statItems, workItems } from "@/constants";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -6,6 +6,7 @@ import React from "react";
 const Work = () => {
   return (
     <section id="work" className="relative z-20 xl:mt-[150px] mt-[80px]">
+      {/* Projects */}
       <div
         className="max-xl:container mx-auto max-w-[1200px] flex flex-col items-center
           justify-center"
@@ -39,6 +40,20 @@ const Work = () => {
                   <ChevronRight width={32} height={32} />
                 </button>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Stats */}
+      <div className="bg-accent-seconday xl:mt-[180px] mt-[80px] xl:py-[150px] py-[80px]">
+        <div className="container mx-auto max-w-[1080px] grid xl:grid-cols-4 grid-cols-1 max-xl:gap-12">
+          {statItems.map((item, index) => (
+            <div
+              key={index}
+              className="text-center xl:border-r xl:last:border-none xl:border-accent space-y-[16px]"
+            >
+              <h1 className="h1 text-accent">{item.stat}</h1>
+              <p className="">{item.label}</p>
             </div>
           ))}
         </div>
