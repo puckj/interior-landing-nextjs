@@ -1,5 +1,13 @@
 import NavBar from "@/components/NavBar";
-import { About, Hero, News, Steps, Testimonial, Work } from "./_components";
+import {
+  About,
+  Footer,
+  Hero,
+  News,
+  Steps,
+  Testimonial,
+  Work,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -14,7 +22,8 @@ export default function Home() {
         <Testimonial />
         <Work />
         <News />
-        <div className="h-[3000px]">{/* temporary div for scrolling */}</div>
+        <Footer />
+        {/* <div className="h-[3000px]">temporary div for scrolling</div> */}
       </main>
     </>
   );

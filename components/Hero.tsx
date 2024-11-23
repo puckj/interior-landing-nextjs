@@ -7,7 +7,10 @@ const Hero = () => {
       className="relative z-20 bg-hero h-[640px] xl:h-[840px] lg:bg-cover bg-center bg-no-repeat
         bg-fixed xl:rounded-bl-[290px]"
     >
-      <div className="container mx-auto h-full flex items-center justify-center xl:justify-start">
+      <div
+        className="max-w-[1200px] max-sm:container mx-auto h-full flex items-center justify-center
+          xl:justify-start"
+      >
         <div
           className="flex flex-col items-center text-center xl:text-left w-[567px] lg:items-start
             gap-[21px]"

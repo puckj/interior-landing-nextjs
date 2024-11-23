@@ -10,7 +10,10 @@ const NavBar = () => {
   const menuToggleHandler = () => setIsMenuOpen((prev) => !prev);
   return (
     <header className="sticky top-0 h-[90px] shadow-lg z-30 bg-white">
-      <div className="container mx-auto h-full flex items-center justify-between">
+      <div
+        className="max-xl:container max-w-[1200px] w-full mx-auto h-full flex items-center
+          justify-between"
+      >
         <Link href="/">
           <Image src={"/logo.svg"} width={133} height={50} alt="Interno Logo" />
         </Link>

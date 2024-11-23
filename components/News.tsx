@@ -48,7 +48,7 @@ const News = () => {
       </div>
       {/* contact with us */}
       <div
-        className="bg-primary container xl:mt-[150px] mt-[80px] mx-auto max-w-[1200px]
+        className="bg-primary max-xl:container xl:mt-[150px] mt-[80px] mx-auto max-w-[1200px]
           sm:rounded-[70px] flex flex-col justify-center py-[80px]"
       >
         <div className="max-w-[640px] mx-auto text-center">

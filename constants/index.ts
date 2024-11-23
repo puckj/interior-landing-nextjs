@@ -138,3 +138,75 @@ export const newsItems = [
     img: "/news/03.png",
   },
 ];
+
+export const footerItems = [
+  {
+    label: "Pages",
+    subMenu: [
+      {
+        label: "About Us",
+        href: "#",
+      },
+      {
+        label: "Our Projects",
+        href: "#",
+      },
+      {
+        label: "Our Team",
+        href: "#",
+      },
+      {
+        label: "Contact Us",
+        href: "#",
+      },
+      {
+        label: "Services",
+        href: "#",
+      },
+    ],
+  },
+  {
+    label: "Services",
+    subMenu: [
+      {
+        label: "Kitchen",
+        href: "#",
+      },
+      {
+        label: "Living Area",
+        href: "#",
+      },
+      {
+        label: "Bathroom",
+        href: "#",
+      },
+      {
+        label: "Dinning Hall",
+        href: "#",
+      },
+      {
+        label: "Bedroom",
+        href: "#",
+      },
+    ],
+  },
+];
+
+export const socialItems = [
+  {
+    img: "/footer/facebook.svg",
+    href: "https://www.facebook.com/",
+  },
+  {
+    img: "/footer/x.svg",
+    href: "https://x.com/",
+  },
+  {
+    img: "/footer/linkedin.svg",
+    href: "https://www.linkedin.com/",
+  },
+  {
+    img: "/footer/instagram.svg",
+    href: "https://www.instagram.com/",
+  },
+];
