@@ -4,12 +4,12 @@ import "./globals.css";
 import AOSInit from "@/components/AOSInit";
 
 const dmSerif = localFont({
-  src: "./fonts/dmSerifVF.ttf",
+  src: "./fonts/dm-serif.ttf",
   variable: "--font-dm-serif",
   weight: "400",
 });
 const jost = localFont({
-  src: "./fonts/jostVF.ttf",
+  src: "./fonts/jost.ttf",
   variable: "--font-jost",
   weight: "400 700",
 });
