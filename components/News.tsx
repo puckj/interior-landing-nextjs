@@ -25,9 +25,8 @@ const News = () => {
         </div>
         <div className="grid xl:grid-cols-3 grid-cols-1 gap-[27px]">
           {newsItems.map((item, index) => (
-            <div data-aos="fade-up" data-aos-delay={index * 100}>
+            <div data-aos="fade-up" data-aos-delay={index * 100} key={index}>
               <div
-                key={index}
                 className="p-[21px] pb-[37px] border border-primary/20 rounded-[62px] flex flex-col
                   gap-[21px] items-center max-w-[382px] bg-white hover:bg-accent-seconday group
                   transition-all duration-300 cursor-pointer mx-auto xl:mx-0"
