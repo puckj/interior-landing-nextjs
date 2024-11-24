@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import AOSInit from "@/components/AOSInit";
 
 const dmSerif = localFont({
   src: "./fonts/dmSerifVF.ttf",
@@ -25,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <AOSInit />
       <body
         className={`${dmSerif.variable} ${jost.variable} antialiased bg-gray-100`}
       >

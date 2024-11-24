@@ -10,7 +10,10 @@ const About = () => {
             gap-8 xl:gap-[74px]"
         >
           {/* TEXT */}
-          <div className="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[410px]">
+          <div
+            className="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[410px]"
+            data-aos="fade-right"
+          >
             <h2 className="h2 mb-[33px] max-sm:text-[48px]">
               We Create The Art Of Stylish Living Stylishly
             </h2>
@@ -39,6 +42,8 @@ const About = () => {
           <div
             className="order-1 rounded-bl-[100px] rounded-tr-[200px] max-md:rounded-tr-[150px]
               overflow-hidden max-w-[453px] xl:max-w-none mx-auto xl:mx-0"
+            data-aos="fade-left"
+            data-aos-delay="600"
           >
             <Image
               src="/about/kitchen.png"

@@ -21,53 +21,60 @@ const Testimonial = () => {
         className="mx-auto max-w-[1200px] container max-sm:px-6 bg-accent-seconday
           sm:rounded-[70px] flex flex-col justify-center items-center py-[88px]
           max-sm:py-[66px]"
+        data-aos="fade-up"
       >
-        <h2 className="h2 max-w-[547px] text-center mb-[38px] max-sm:text-[48px]">
+        <h2
+          className="h2 max-w-[547px] text-center mb-[38px] max-sm:text-[48px]"
+          data-aos="fade-up"
+          data-aos-delay="50"
+        >
           What the People Thinks About Us
         </h2>
-        <div className="w-full drop-shadow-sm">
-          <div>
-            <Swiper
-              spaceBetween={20}
-              loop={true}
-              slidesPerView={1}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                320: { slidesPerView: 1 },
-                888: { slidesPerView: 2 },
-                1280: { slidesPerView: 3 },
-              }}
-              modules={[Autoplay]}
-            >
-              {testimonialItems.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className="w-full xl:max-w-[370px] max-w-[420px] h-[340px] bg-white rounded-[30px] flex
-                      flex-col items-center mx-auto cursor-pointer"
-                  >
-                    <div className="max-w-[280px]">
-                      <div className="flex gap-6 items-center mt-[42px] mb-[25px]">
-                        <Image
-                          src={item.img}
-                          alt={item.name}
-                          width={77}
-                          height={77}
-                        />
-                        <div>
-                          <h3 className="h3">{item.name}</h3>
-                          <p>{item.location}</p>
-                        </div>
+        <div
+          className="w-full drop-shadow-sm"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <Swiper
+            spaceBetween={20}
+            loop={true}
+            slidesPerView={1}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              888: { slidesPerView: 2 },
+              1280: { slidesPerView: 3 },
+            }}
+            modules={[Autoplay]}
+          >
+            {testimonialItems.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div
+                  className="w-full xl:max-w-[370px] max-w-[420px] h-[340px] bg-white rounded-[30px] flex
+                    flex-col items-center mx-auto cursor-pointer"
+                >
+                  <div className="max-w-[280px]">
+                    <div className="flex gap-6 items-center mt-[42px] mb-[25px]">
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        width={77}
+                        height={77}
+                      />
+                      <div>
+                        <h3 className="h3">{item.name}</h3>
+                        <p>{item.location}</p>
                       </div>
-                      <p>{item.comment}</p>
                     </div>
+                    <p>{item.comment}</p>
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       {/* Brands */}
@@ -80,6 +87,8 @@ const Testimonial = () => {
               alt="brand-logo"
               width={120}
               height={120}
+              data-aos="fade-up"
+              data-aos-delay={index * 50}
             />
           ))}
         </div>

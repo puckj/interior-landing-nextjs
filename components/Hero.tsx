@@ -12,6 +12,8 @@ const Hero = () => {
           xl:justify-start"
       >
         <div
+          data-aos="fade-down"
+          data-aos-duration="2000"
           className="flex flex-col items-center text-center xl:text-left w-[567px] lg:items-start
             gap-[21px]"
         >

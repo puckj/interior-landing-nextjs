@@ -9,7 +9,10 @@ const Footer = () => {
         className="max-xl:container !px-0 mx-auto max-w-[1200px] flex xl:flex-row flex-col
           justify-between max-xl:items-center"
       >
-        <div className="max-w-[400px] flex flex-col max-xl:items-center">
+        <div
+          className="max-w-[400px] flex flex-col max-xl:items-center"
+          data-aos="fade-up"
+        >
           <Image src="/logo.svg" alt="Interno Logo" width={150} height={150} />
           <p className="mt-[18px] max-xl:text-center">
             Creating unique and timeless interior designs that inspire every
@@ -33,7 +36,7 @@ const Footer = () => {
             max-xl:mt-[60px]"
         >
           {footerItems.map((item, index) => (
-            <div key={index}>
+            <div key={index} data-aos="fade-up" data-aos-delay={index * 50}>
               <h3 className="h3">{item.label}</h3>
               <div className="flex flex-col gap-5 mt-[15px]">
                 {item.subMenu.map((subItem, index) => (
@@ -44,7 +47,11 @@ const Footer = () => {
               </div>
             </div>
           ))}
-          <div className="max-w-[300px] text-[20px]">
+          <div
+            className="max-w-[300px] text-[20px]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h3 className="h3 mb-[15px]">Contact</h3>
             <div className="space-y-4">
               <p>888/1 Rama IV Rd, Wang Mai, Pathum Wan, Bangkok 10330</p>

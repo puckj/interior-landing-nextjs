@@ -12,6 +12,9 @@ const Steps = () => {
             <div
               className="flex flex-col items-center max-w-[358px] text-center"
               key={index}
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-delay={index * 300}
             >
               <Image src={step.icon} width={45} height={45} alt={step.title} />
               <h3 className="text-[23px] mb-5 mt-2">{step.title}</h3>
